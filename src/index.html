@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <title>Angular Abbreviation Directive</title>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+    <style>
+        body {margin-bottom: 50px;}
+        li {padding: 5px}
+        hr {margin: 50px 0}
+        table { width: 100%; margin-bottom: 20px}
+        table td {padding: 10px 4px; border-bottom: solid 1px #eee}
+        .well hr {margin: 30px 0 30px}
+        .jumbotron h2 {margin-top: 0}
+        .text-muted {margin-bottom: 20px}
+    </style>
+</head>
+<body>
+    
+    <div class="jumbotron">
+        <div class="container">
+            <h2>
+                <a target="_blank" href="https://github.com/brantwills/Angular-Paging">
+                    Angular Abbreviation
+                </a>
+            </h2> 
+            A directive to aid in handling abbreviations in a web application.
+        </div>
+    </div>
+
+    
+    <div class="container" ng-app="myApp" ng-controller="sampleCtrl">
+            
+        <!--[if lt IE 10]>
+            <div class="alert alert-warning">
+               <strong>
+                    It is highly recommended you update Internet Explorer or try using a modern browser!
+               </strong> 
+            </div>
+        <![endif]-->
+
+        <h3> Basic Sample </h3>
+        <ul class="list-unstyled text-muted">
+            <li>The simplest example for the abbreviation directive</li>
+        </ul>
+        <div class="well">
+            <div abbreviation
+                 long="'Ameya S Naik'" short="'Ameya'">
+            </div>
+        </div>
+
+
+        <h3> Reference Links </h3>
+        <ul class="list-unstyled"> 
+            <li>Github - <a target="_blank" href="https://github.com/ameyanaik11/Angular-Abbreviation">https://github.com/ameyanaik11/Angular-Abbreviation</a></li>
+            <li>npm - <a target="_blank" href="https://www.npmjs.org/package/angular-abbreviation">https://www.npmjs.org/package/angular-abbreviation</a></li>
+            <li>Ameya Naik - <a target="_blank" href="https://ameyanaik.com">https://ameyanaik.com</a></li>
+        </ul>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="abbreviation.js"></script>
+</body>
+</html>
+
